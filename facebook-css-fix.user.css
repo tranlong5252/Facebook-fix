@@ -1,0 +1,38 @@
+/* ==UserStyle==
+@name         facebook-css-fix
+@description  Fixed Scrollbar and Animations
+@namespace    https://github.com/tranlong5252
+@version      1.0.0
+@license      MIT
+@author       tranlong5252
+@homepageURL  https://github.com/tranlong5252/Facebook-fix/
+@supportURL   https://github.com/tranlong5252/Facebook-fix/issues
+==/UserStyle== */
+
+@-moz-document domain("facebook.com") {
+
+		::-webkit-scrollbar-track, ::-webkit-scrollbar
+{
+	background-color: var(--card-background);
+	}
+::-webkit-scrollbar {
+	width: 15px;
+	}
+::-webkit-scrollbar:hover 
+{
+	background-color: var(--divider);
+	}
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	border: 3px solid var(--card-background);
+	background-color: #8b8b8b;
+	}
+::-webkit-scrollbar-thumb:hover
+{	
+	background-color: #a2a2a2;
+	border: 3px solid var(--divider);
+	}
+	._8ykn :not(.always-enable-animations) {
+	transition-property: all !important;
+	}
+}
